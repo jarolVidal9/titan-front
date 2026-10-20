@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es" data-style="modern">
+  <head>
+    <meta charset="utf-8" />
+    <title>TITAN · Diario de entrenamiento</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Diario de entrenamiento: rutina, series, récords y progreso. Funciona sin conexión." />
+    <meta name="theme-color" content="#7b2cbf" />
+    <link rel="icon" type="image/png" href="icons/favicon-48.png" />
+    <link rel="apple-touch-icon" href="icons/icon-192.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preload" href="fonts/material-symbols-subset.woff2" as="font" type="font/woff2" crossorigin />
+    <script>
+      // Aplica el estilo guardado antes de pintar (evita un parpadeo del tema).
+      try {
+        if (localStorage.getItem('titan.style') === 'retro') document.documentElement.dataset.style = 'retro';
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <app-root></app-root>
+    <noscript>TITAN necesita JavaScript.</noscript>
+  </body>
+</html>
